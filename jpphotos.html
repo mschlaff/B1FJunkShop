@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photography</title>
+  <style>
+  body {
+     background-color: #b8b6b0;
+     font-family: "MS UI Gothic", Tahoma;
+    }
+    
+    body, a, a:hover { }
+    
+    .overlay{
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        z-index:-1;
+    }
+    
+    .caption {
+        background-color: white;
+        position: absolute;
+        height: 20px;
+        width: 127px; 
+        top: 135px;
+        left: 40px;
+        outline: 1px dashed black;
+        transform: rotate(-10deg);
+    }
+    
+    .download {
+        background-color: white;
+        position: absolute;
+        height: 20px;
+        width: 122px; 
+        top: 195px;
+        left: 80px;
+        outline: 1px dashed black;
+        transform: rotate(10deg);
+    }
+    
+    .highlightgreen {
+       background-color: #C8FE2E;
+    }
+    
+    .highlightdarkpink {
+       background-color: #DF01D7;
+    }
+    
+    .title {
+        position: absolute; 
+        top: 20px;
+        left: 0px;
+    }
+    
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev {
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    .next {
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+       filter: saturate(300%) brightness(100%) hue-rotate(90deg);
+    }
+    
+    /* Number text (1/71 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: transparent;
+        color: white;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.8;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+<a href="/index.html"><div class="title"><img src="/media/b1flogo100.png" style="width:300px;"><br></div></a>
+<br><br><br>
+
+<div class="caption"> 
+<font size="1.8" color="red">
+&nbsp;Photos - Japan
+</font>
+</div>
+
+<div class="download"> 
+<font size="1.8" color="red">
+&nbsp;<a href="/mywork.html" class="nlink">&nbsp;Go Back </a>
+</font>
+</div>
+
+<center>
+<table>
+<tbody><tr><th>
+</th><td><a class="prev" onclick="plusSlides(-1)"><img src="/media/leftarrow.png" style="height:100px"></a>
+</td><th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">1 / 43</div>
+      <img src="/media/photography/001.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: block;">
+    <div class="numbertext">2 / 43</div>
+      <img src="/media/photography/002.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">3 / 43</div>
+      <img src="/media/photography/003.JPG" style="height:600px">
+    </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">4 / 43</div>
+      <img src="/media/photography/004.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">5 / 43</div>
+      <img src="/media/photography/005.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">6 / 43</div>
+      <img src="/media/photography/006.JPG" style="height:600px">
+</div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">7 / 43</div>
+      <img src="/media/photography/007.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">8 / 43</div>
+      <img src="/media/photography/008.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">9 / 43</div>
+      <img src="/media/photography/009.JPG" style="height:600px">
+</div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">10 / 43</div>
+      <img src="/media/photography/010.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">11 / 43</div>
+      <img src="/media/photography/011.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">12 / 43</div>
+      <img src="/media/photography/012.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">13 / 43</div>
+      <img src="/media/photography/013.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">14 / 43</div>
+      <img src="/media/photography/014.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">15 / 43</div>
+      <img src="/media/photography/015.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">16 / 43</div>
+      <img src="/media/photography/016.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">17 / 43</div>
+      <img src="/media/photography/017.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">18 / 43</div>
+      <img src="/media/photography/018.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">19 / 43</div>
+      <img src="/media/photography/019.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">20 / 43</div>
+      <img src="/media/photography/020.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">21 / 43</div>
+      <img src="/media/photography/021.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">22 / 43</div>
+      <img src="/media/photography/022.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">23 / 43</div>
+      <img src="/media/photography/023.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">24 / 43</div>
+      <img src="/media/photography/024.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">25 / 43</div>
+      <img src="/media/photography/025.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">26 / 43</div>
+      <img src="/media/photography/026.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">27 / 43</div>
+      <img src="/media/photography/027.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">28 / 43</div>
+      <img src="/media/photography/028.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">29 / 43</div>
+      <img src="/media/photography/029.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">30 / 43</div>
+      <img src="/media/photography/030.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">31 / 43</div>
+      <img src="/media/photography/031.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">32 / 43</div>
+      <img src="/media/photography/032.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">33 / 43</div>
+      <img src="/media/photography/033.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">34 / 43</div>
+      <img src="/media/photography/034.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">35 / 43</div>
+      <img src="/media/photography/035.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">36 / 43</div>
+      <img src="/media/photography/036.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">37 / 43</div>
+      <img src="/media/photography/037.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">38 / 43</div>
+      <img src="/media/photography/038.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">39 / 43</div>
+      <img src="/media/photography/039.JPG" style="height:600px">
+      </div>
+
+        <div class="mySlides" style="display: none;">
+    <div class="numbertext">40 / 43</div>
+      <img src="/media/photography/040.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">41 / 43</div>
+      <img src="/media/photography/041.JPG" style="height:600px">
+  </div>
+
+  <div class="mySlides" style="display: none;">
+    <div class="numbertext">42 / 43</div>
+      <img src="/media/photography/042.JPG" style="height:600px">
+      </div>
+
+  </div>
+
+</th>
+<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>
+  <a class="next" onclick="plusSlides(1)"><img src="/media/rightarrow.png" style="height:100px"></a>
+</th>
+
+</tr></tbody></table>
+
+  <br><br><br>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+   
+  <img class="demo cursor" src="/media/photography/001.JPG" style="width:2%" onclick="currentSlide(1)">
+   
+  <img class="demo cursor" src="/media/photography/002.JPG" style="width:2%" onclick="currentSlide(2)">
+
+  <img class="demo cursor" src="/media/photography/003.JPG" style="width:2%" onclick="currentSlide(3)">
+
+  <img class="demo cursor" src="/media/photography/004.JPG" style="width:2%" onclick="currentSlide(4)">
+   
+  <img class="demo cursor" src="/media/photography/005.JPG" style="width:2%" onclick="currentSlide(5)">
+
+  <img class="demo cursor" src="/media/photography/006.JPG" style="width:2%" onclick="currentSlide(6)">
+
+  <img class="demo cursor" src="/media/photography/007.JPG" style="width:2%" onclick="currentSlide(7)">
+   
+  <img class="demo cursor" src="/media/photography/008.JPG" style="width:2%" onclick="currentSlide(8)">
+
+  <img class="demo cursor" src="/media/photography/009.JPG" style="width:2%" onclick="currentSlide(9)">
+
+  <img class="demo cursor" src="/media/photography/010.JPG" style="width:2%" onclick="currentSlide(10)">
+   
+  <img class="demo cursor" src="/media/photography/011.JPG" style="width:2%" onclick="currentSlide(11)">
+
+  <img class="demo cursor" src="/media/photography/012.JPG" style="width:2%" onclick="currentSlide(12)">
+
+  <img class="demo cursor" src="/media/photography/013.JPG" style="width:2%" onclick="currentSlide(13)">
+   
+  <img class="demo cursor" src="/media/photography/014.JPG" style="width:2%" onclick="currentSlide(14)">
+
+  <img class="demo cursor" src="/media/photography/015.JPG" style="width:2%" onclick="currentSlide(15)">
+
+  <img class="demo cursor" src="/media/photography/016.JPG" style="width:2%" onclick="currentSlide(16)">
+   
+  <img class="demo cursor" src="/media/photography/017.JPG" style="width:2%" onclick="currentSlide(17)">
+
+  <img class="demo cursor" src="/media/photography/018.JPG" style="width:2%" onclick="currentSlide(18)">
+
+  <img class="demo cursor" src="/media/photography/019.JPG" style="width:2%" onclick="currentSlide(19)">
+   
+  <img class="demo cursor" src="/media/photography/020.JPG" style="width:2%" onclick="currentSlide(20)">
+
+  <img class="demo cursor" src="/media/photography/021.JPG" style="width:2%" onclick="currentSlide(21)">
+
+  <img class="demo cursor" src="/media/photography/022.JPG" style="width:2%" onclick="currentSlide(22)">
+   
+  <img class="demo cursor" src="/media/photography/023.JPG" style="width:2%" onclick="currentSlide(23)">
+
+  <img class="demo cursor" src="/media/photography/024.JPG" style="width:2%" onclick="currentSlide(24)">
+
+  <img class="demo cursor" src="/media/photography/025.JPG" style="width:2%" onclick="currentSlide(25)">
+   
+  <img class="demo cursor" src="/media/photography/026.JPG" style="width:2%" onclick="currentSlide(26)">
+
+  <img class="demo cursor" src="/media/photography/027.JPG" style="width:2%" onclick="currentSlide(27)">
+
+  <img class="demo cursor" src="/media/photography/028.JPG" style="width:2%" onclick="currentSlide(28)">
+   
+  <img class="demo cursor" src="/media/photography/029.JPG" style="width:2%" onclick="currentSlide(29)">
+
+  <img class="demo cursor" src="/media/photography/030.JPG" style="width:2%" onclick="currentSlide(30)">
+
+  <img class="demo cursor" src="/media/photography/031.JPG" style="width:2%" onclick="currentSlide(31)">
+   
+  <img class="demo cursor" src="/media/photography/032.JPG" style="width:2%" onclick="currentSlide(32)">
+
+  <img class="demo cursor" src="/media/photography/033.JPG" style="width:2%" onclick="currentSlide(33)">
+
+  <img class="demo cursor" src="/media/photography/034.JPG" style="width:2%" onclick="currentSlide(34)">
+   
+  <img class="demo cursor" src="/media/photography/035.JPG" style="width:2%" onclick="currentSlide(35)">
+
+  <img class="demo cursor" src="/media/photography/036.JPG" style="width:2%" onclick="currentSlide(36)">
+   
+  <img class="demo cursor" src="/media/photography/037.JPG" style="width:2%" onclick="currentSlide(37)">
+
+  <img class="demo cursor" src="/media/photography/038.JPG" style="width:2%" onclick="currentSlide(38)">
+
+  <img class="demo cursor" src="/media/photography/039.JPG" style="width:2%" onclick="currentSlide(39)">
+   
+  <img class="demo cursor" src="/media/photography/040.JPG" style="width:2%" onclick="currentSlide(40)">
+
+  <img class="demo cursor" src="/media/photography/041.JPG" style="width:2%" onclick="currentSlide(41)">
+
+  <img class="demo cursor" src="/media/photography/042.JPG" style="width:2%" onclick="currentSlide(42)">
+
+  </div>
+
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<div class="overlay"></div>
+
+
+</center><span style="border-radius: 10px !important; text-indent: 12px !important; width: auto !important; height: 20px !important; padding: 0px 8px !important; text-align: center !important; vertical-align: middle !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 76px; left: 127px;">Save</span><span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 76px; left: 942px;">
+</span>
+</body>
+</html>
