@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1F Junk Shop</title>
+    <style>
+        html {
+            background-image: url();
+            background-repeat: repeat;
+            background-color: #b8b6b0;
+            font-size: 12px;
+            font-family: "MS UI Gothic", Tahoma;
+            color: #000000;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+
+        .nofilter {
+            image-rendering: auto;
+        }
+
+        body {
+            margin-top: 20px;
+            width: 773px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        p {
+            padding: 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .nlink {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nlink:hover {
+            background-color: #aaffff;
+        }
+
+        .maintab {
+            min-height: 450px;
+        }
+
+        .maintab td {
+            border: 3px inset #ccc4a9;
+        }
+
+        .list-unstyled {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .list-unstyled li {
+            background-color: #fafaf2;
+        }
+
+        .list-unstyled li:nth-child(even) {
+            background-color: white;
+        }
+
+        .headtb {
+            height: 100px;
+            background-image: "/media/wordart.png";
+            border: 3px inset #ccc4a9;
+        }
+        
+        div {
+          display: block;
+        }
+
+        h2,
+        h3 {
+            background-color: #fafaf2;
+        }
+
+
+        hr {
+            border: 1px solid #ccc4a9;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grouvee_game {
+            /* customize game cover container div here */
+            float: left;
+            width: 90px;
+            height: 90px;
+            padding: 0px 0px;
+            overflow: hidden;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <table style="table-layout: fixed; width: 760px; border-spacing:0; border-collapse:collapse;" class="maintab">
+        <colgroup>
+            <col style="width: 180px;">
+            <col style="width: 590px;">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th colspan="2" class="headtb"><center><img src="/media/b1flogo100.png" style="height:98px;"></center></th>
+            </tr>
+            <tr>
+                <td style="height: 400px; vertical-align: top;">
+                    <div style="vertical-align: top; height: 200px;">
+                    <span style="background-color:#888270; width:175px; display:inline-block; color:white;"><strong>&nbsp;LINKS</strong></span>
+                    <ul class="list-unstyled">
+                        <li> <a href="/" class="nlink">&nbsp;Home </a></li>
+                        <li> <a href="#" class="nlink" onclick="show('work')">&nbsp;Work</a></li>
+                        <li> <a href="#" class="nlink" onclick="show('uni')">&nbsp;University</a></li>
+                        <li> <a href="#" class="nlink" onclick="show('hs')">&nbsp;High School</a></li>
+                        <li> <a href="#" class="nlink" onclick="show('personal')">&nbsp;Personal</a></li>
+                        <li> <a href="#" class="nlink" onclick="show('photos')">&nbsp;Photography</a></li>
+                        <li> <a href="#" class="nlink" onclick="show('art')">&nbsp;Art</a></li>
+                    </ul>
+                    </div>
+                    <div style="height: 200px;">
+                        <div style="position: absolute; bottom: 60px; left: 8px;">
+                        <!-- FC2 Counter  Starts here -->
+                        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=38932409&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38932409&main=1" /></noscript>
+                        <!-- FC2 Counter  Ends here -->
+                        <br><p>Founded 2023 March 12</p>
+                        </div>
+                    </div>
+                </td>
+                <td style="vertical-align:top;">
+                    <div id="rightconta">
+                <h2>My Work</h2>
+                <p>Welcome to the page about my projects. Please use the sidebar links to navigate.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="/media/ditherpeace.png">
+                </div>
+                </td>
+            </tr>
+            <tr>
+                 <td colspan="2">
+                    <div class="spacer" style="text-align: center;">
+                    <marquee direction="left" scrollamount="5" style="width:765px;"><img src="/media/ilikecomputer.png"><img src="/media/imissxp.gif"><img src="/media/neo-cities.gif"><img src="/media/oldnet.gif"><img src="/media/phonechump.gif"><img src="/media/poweredbylain.gif"><img src="/media/winxp.gif"><img src="/media/www.gif"><img src="/media/eyes.gif"><img src="/media/html.gif"><img src="/media/ie.gif"></marquee>  
+                    </div>
+                    <p><center>Last updated 2024 January 16</center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div id="work" style="display:none">
+        <h2>Work</h2>
+        <p>This is basically my resume. I can't go into too much detail on some things here because I signed a few NDAs.</p>
+        <hr style="clear:both;">
+        
+        <h3>Microsoft</h3>
+        <p>Summer 2022</p>
+        <p>Worked on Bing Maps routing debugging team. Used HTML, CSS, and JavaScript to create a new tool that migrated functionalities from existing tools previously used. Worked closely with the team to test and develop existing and new functions as requested by team members. Designed a new application interface that is more user-friendly and connected back-end functionality to the new app.</p>
+        
+        <br><h3>AMD</h3>
+        <p>Summer - Fall 2021</p>
+        <p>Used Python and C++ to create extensions for the test chip client within AMD’s existing infrastructure to retrieve serial numbers from test prober and fuse into parts being tested and to read the fused parts and store IDs within KDF files. Created automated correlation scripts in Python to compare KDF files during Final Testing.</p>
+        <p>Member of AMD’s Intern Leadership Committee (ILC), handled administrative tasks and organized events for co-ops and interns such as meet-and-greets, gaming events, networking events, and happy hours for both all co-ops/interns and a special happy hour for female co-ops/interns.</p>
+        
+        <br><h3>Northrop Grumman</h3>
+        <p>Summer 2020</p>
+        <p>Developed and coded “PyTT1NG”, a GUI in Python 2.7 for Northrop’s flight test engineers to access requirements and test points for ground and flight vehicles and create new testing points/requirements when needed. Worked specifically on the “Metrics” tab, which analyzes and graphs data based on completed test flights.</p>
+        
+        <br><h3>NASA Johnson Space Center</h3>
+        <p>Summer 2019</p>
+        <p>Designed and implemented electrical systems for the Artemis program for the next generation of lunar rovers to be launched in 2024. Within two months, the prototype rover was fully built and functional as well as tested in the site's rock yard.</p>
+        <p>Participated in the NASA robotics division's yearly counter-terrorism design challenge workshop. Collaborated with Houston police officers, Department of Defense specialists, and internationally-based bomb technicians. Within one week, robots are built to complete tasks to aid in bomb detection, such as traversing stairs and ladders.</p>
+        <p>Created "PipeBot", a mini remote bot to aid in bomb detection. Video transmission to a screen using a camera and 5.2 ghz video transmitter. RC receiver gave PWM input to brushless motor controllers for both wheels. The whole system was powered by a LiPo battery.</p>
+        <center><img src="/media/pipebot.jpg" style="width:200px;"></center>
+    </div>
+    
+    
+    <div id="uni" style="display:none">
+        <h2>University</h2>
+        <p>Below are various projects I have completed during my time in university. You can drag the thumbnails to the tab bar and view the images in full size.</p>
+        <hr style="clear:both;">
+        
+        <h3>CS 3451 Projects</h3>
+        <p>Spring 2024</p>
+        <p><i>Georgia Institute of Technology, CS3451 - Computer Graphics</i></p>
+        <p>Coming soon! ;)</p>
+        
+        <br><h3>CS 3600 Projects</h3>
+        <p>Spring 2024</p>
+        <p><i>Georgia Institute of Technology, CS3600 - Intro to Artificial Intelligence</i></p>
+        <p>Coming soon! ;)</p>
+        
+        <br><h3>CS 2110 Projects</h3>
+        <p>Fall 2023</p>
+        <p><i>Georgia Institute of Technology, CS2110 - Computer Organization & Programming</i></p>
+        <p>ALU: Created an 8-bit ALU in circuit simulation software</p>
+        <p>LC-3: Created an LC-3 with programmable registers in circuit simulation software</p>
+        <p>Word Processor: Coded a word processor in LC-3 Assembly code with functionality to capitalize lines, justify text, reverse words, etc.</p>
+        
+        <br><h3>Max/MSP: Movement-Based Audio Output</h3>
+        <p>Fall 2022</p>
+        <p><i>Yonsei University, CMP3210 - Music Technology</i></p>
+        <p>The project combined music with computer vision by inputting webcam video and outputting midi values. Takes webcam input, mirrors it, converts it to greyscale, and creates a matrix from camera input. It finds the difference between each frame to find where motion is happening. There is a specific adjustable horizontal line in the matrix that you can use to detect motion from, then transmits the white line coordinates to the matrix to cut off everything above and below it. Then, it converts the matrix into numerical values for midi format and forms a filter that eliminates zero values. You can also change the instrument that outputs sound.</p>
+        <center><img src="/media/maxmspfinal.jpg" style="width:300px;"></center>
+        
+        <br><h3>CS 1331 Projects</h3>
+        <p>Spring 2021</p>
+        <p><i>Georgia Institute of Technology, CS1331 - Object Oriented Programming</i></p>
+        <p>All projects in this class were completed in Java.</p>
+        <p>Projects: Color game, etc.</p>
+        
+        <br><h3>Media Studies</h3>
+        <p>Spring 2021</p>
+        <p><i>Georgia Institute of Technology, LMC2720 - Media Studies</i></p>
+        <p>Was tasked to gather aesthetic photos from our camera roll and collage/remix them into a new cohesive image. I chose images from one of my trips to the HIgh Museum of Art, including some pieces from Virgil Abloh's FIGURES OF SPEECH exhibition that was held at the time. There are a lot of statues in the High, so I decided to go with a vaporwave-style collage.</p>
+        <center><img src="/media/lmcpic.jpg" style="width:200px;"></center>
+        
+        <br><h3>Mid Night Club Article</h3>
+        <p>Spring 2021</p>
+        <p><i>Georgia Institute of Technology, LMC2400 - Media Studies</i></p>
+        <p>"Creating a Legend: Mid Night Club"</p>
+        <p>An article created for the final project for my intro Media Studies class, given the prompt, "write about anything." I interviewed Albo Abuganday, creator of the YouTube channel "ALBO" and gained insight on his personal experiences and thoughts about the Mid Night Club.</p>
+        
+        <br><h3>CS 1301 Projects</h3>
+        <p>Fall 2019</p>
+        <p><i>Georgia Institute of Technology, CS1301 - Intro to Programming</i></p>
+        <p>All projects in this class were completed in Python.</p>
+        <p>Projects: pig latin translator, etc.</p>
+    </div>
+    
+    
+    <div id="hs" style="display:none">
+        <h2>High School</h2>
+        <p>Below are various projects I have completed during my time in high school. You can drag the thumbnails to the tab bar and view the images in full size.</p>
+        <hr style="clear:both;">
+        <h3>FIRST Robotics Competition</h3>
+        <p><i>FIRST Robotics Competition (FRC) is an international high school robotics competition. Each year, teams of high school students, coaches, and mentors work during a six-week period to build robots capable of competing in that year's game that weigh up to 125 pounds. Robots complete tasks such as scoring balls into goals, placing inner tubes onto racks, hanging on bars, and balancing robots on balance beams. The game, along with the required set of tasks, changes annually.</i></p>
+        <br><p>2019 Season: Destination: Deep Space</p>
+        <p><i>The game has an outer space theme involving two alliances consisting of three teams each competing to place poly-carbonate hatch panels and orange rubber balls or "cargo" on rockets and cargo ships before returning to their HAB platform to climb at the end of the match.</i></p>
+        <p>Electrical Captain</p>
+        <p>Team Awards: Channelview TX District Event Winner, Quality Award, Industrial Design Award, Woodie Flowers Award</p>
+        <center><img src="/media/2019.jpg" style="width:200px;"></center>
+        <br><p>2018 Season: FIRST Power Up</p>
+        <p><i>The game has a retro 8-bit theme and teams are required to place milk crates, or "power cubes", on large balancing scales to tip the scale and gain ownership. Alliances can also trade power cubes for power ups, giving them a temporary advantage in a match. At the end of the match, robots can climb the tower attached to the centre balancing scale using a rung attached to the tower, giving them additional points.</i></p>
+        <p>Robot Driver, Electrical Team</p>
+        <center><img src="/media/2018.jpg" style="width:200px;"></center>
+        <br><p>2017 Season: FIRST Steamworks</p>
+        <p><i>The game has a steampunk theme and teams are required to shoot wiffle balls which represent fuel into a simulated boiler which transfers the generated steam into an airship in the middle of the field. Each alliance has one airship, which they pressurize with steam from the boiler and load with plastic gears from the field. At the end of the match, robots can climb and hang on ropes attached to the airship for additional points.</i></p>
+        <p>Robot Driver</p>
+        <p>Team Awards: World Championship Finalist</p>
+        <center><img src="/media/2017.jpg" style="width:200px;"></center>
+        <br><p>2016 Season: FIRST Stronghold</p>
+        <p><i>The game has a midieval theme and was played by two alliances of up to three teams each, and involves breaching the opponents’ defenses, known as outer work as well as capturing their tower by first firing "boulders" (small foam balls) at it, and then surrounding or scaling the tower using a singular rung on the tower wall. Points were scored by crossing elements of the tower's outer works, shooting boulders into the opposing tower's five goals in order to lower the tower strength, and by surrounding and scaling the tower.</i></p>
+        <p>Scouting Team</p>
+        <p>Team Awards: Rookie All-Star Award</p>
+        <center><img src="/media/2016.jpg" style="width:200px;"></center>
+        <br><hr style="clear:both;">
+        <h3>FRC 5892 Logo Design and Branding/Media</h3>
+        <p>In 2017, I took upon the task of rebranding my school's robotics team. I researched design and branding standards of other robotics teams across the country, and used this research to create our team's new logo and branding standards. I created shirts, hoodies, jerseys, stickers, and other merchandise for the team that upheld the standard I created. I also took the role of social media manager, running the team's twitter and instagram accounts while I was on the team.</p>
+        <center><img src="/media/gearbolt.png" style="width:200px;"></center>
+        <center><img src="/media/twitter.png" style="width:300px;"></center>
+        <center><img src="/media/jersey.PNG" style="width:300px;"></center>
+        
+        <br><hr style="clear:both;">
+        <h3>Wearable Arduino Fashion</h3>
+        <p>A light-up motion activated skirt that used Arduino Neopixel LED lights and an accelerometer to detect motion and would light up as you walk around. The lights are brighter if there is more movement, such as spinning or running. This skirt was the final project for my electronics class in my junior year and took about a month to complete, including hand-sewing each of the Neopixel lights into the skirt with conductive thread.</p>
+        
+        <br><h3>Other Arduino Projects</h3>
+        <p>In my high school electronics class, I created many basic arduino projects. Some examples include temperature sensor, candle simulator, pressure sensor, etc.</p>
+        <br>
+    </div> 
+    
+    
+    <div id="personal" style="display:none">
+        <h2>Personal Projects</h2>
+        <p>Under construction. You can drag the thumbnails to the tab bar and view the images in full size.</p>
+        <hr style="clear:both;">
+        <h3>B1F Junk Shop</h3>
+        <p>This website! It is a passion project for me to showcase everything and anything that I know and do, and will serve as my personal slice of the wired. Since I am always so busy with school, its hard to regularly update here.</p>
+        <hr style="clear:both;">
+        <h3>Japan Travel Diary</h3>
+        <p><a href="/japanpics.html">View Photos Here</a></p>
+        <p>While I on my first trip in Japan, I decided to keep a travel diary since I would be there so long and keep track of everything I did. I have since digitalized (at least some of) it and recently uploaded the collages of the papers, receipts, junk, and other flat items I collected each day.
+        <hr style="clear:both;">
+        <h3>1995 Mazda Miata</h3>
+        <p>My car, my pride and joy. I have owned the car for over 3 years, and I complete all upgrades and repairs by myself. I often go driving for fun, and my car has been amazing every time. This car has gotten me through many ups and downs in the last 3 years and I can't be more thankful to her. Although it may be old, I believe that if you take care of a car, it will take care of you.</p>
+        <center><img src="/media/miata.jpg" style="height:175px;"> <img src="/media/miata1.jpg" style="height:175px;"></center>
+        <hr style="clear:both;">
+        <img src="/media/vtuber.png" style="float:right; height:350px; padding-left:10px">
+        <h3>VTuber Model</h3>
+        <p>During Covid, I was interested in streaming on Twitch and I thought it would be funny to turn myself into a vtuber. I used Vroid Studio to create the model and through webcam tracking I used it sometimes during my Twitch streams. I was on my school's Valorant competitive team at the time, so I would stream some of my games for my friends and in the corner would be my little avatar. Later, when I moved to Austin, I got a VR setup and started to play VR games with the Vtuber setup too.</p>
+        <p>The model is pretty simple, because Vroid Studio wasn't very complex at the time when I created it. It just looks like me when I had dyed my hair green during Covid with a simple tshirt and jeans. I would usually only position the model to appear from the waist-up in streams since the bottom half wasn't doing anything interesting if I wasn't playing a VR game.</p>
+        <p>I think it would be fun to get back into vtubing or making vtuber models, but the vtuber market has gotten totally oversaturated in the last year or two. And, I did this partly as a joke, so I don't think I would seriously try doing it again to gain followers or make money.</p>
+    </div>
+    
+    
+    <div id="photos" style="display:none">
+        <h2>Photography</h2>
+        <p>An introduction to my film photography hobby and the cameras I own! I love the retro feeling that film captures and how it feels like every picture is somehow simultaneously taken in the past and present.</p>
+        <hr style="clear:both;">
+        <h3>Olympus Pen EE-3</h3>
+        <p><i>Film stocks used: Kodak Gold 200, Kodak Ultramax 400</i></p>
+        <p>My first film camera. Bought November 22, 2022 at the film camera market in Chungmuro, Seoul for ₩175,000. The Olympus Pen series cameras take half-frame photos, meaning I can get double the photos out of a roll of film, good because film is getting expensive nowadays. Since the photos are taken on half frame, the camera takes photos vertically by default. This camera is special because it features an engraving of the previous owner's name on it, HAN. I like to think that cameras like this have a soul and carry the memories of its past life. I wonder what kind of person the owner was and what kind of photos they took.</p>
+        <ul>
+          <li><a href="/jpphotos.html" class="nlink">&nbsp;Photos in Japan</a></li>
+          <li><a href="/krphotos.html" class="nlink">&nbsp;Photos in Korea</a></li>
+        </ul>
+        <img src="/media/photography/olympus.jpg" style="width:250px;">
+        <hr style="clear:both;">
+        <h3>Minolta Pocket Autopak 450 Ex</h3>
+        <p><i>Film stocks used: Lomography LomoChrome Purple, Lomography Lobster Redscale</i></p>
+        <p>My second film camera. Bought February 18, 2023 at a thrift store in Maebashi, Gunma, Japan for ¥880. It takes 110 film and also features the previous owner's name, 大田. I have only used weird film stocks with this camera, so the photos are all experimental and many didn't turn out well. Since 110 film is discontinued by almost every company except Lomography, it is hard to find film for this camera and I haven't taken many photos with it.</p>
+        <ul>
+          <li><a href="/110photos.html" class="nlink">&nbsp;110 Photos</a></li>
+        </ul>
+        <img src="/media/photography/110.jpg" style="height:150px;"><img src="/media/photography/1101.jpg" style="height:150px;">
+        <hr style="clear:both;">
+        <h3>Minolta Hi-matic SD</h3>
+        <p><i>Film stocks used: Fujifilm 200</i></p>
+        <p>My third film camera. Technically I bought it for my friend back home, but i'm using and testing it until I return home. Bought March 27, 2023 at the film camera market in Chungmuro, Seoul for ₩200,000. This camera is relatively high-tech, featuring a pop-up flash, automatic timer, automatic exposre adjustment, and the ability to set the date (although the only years available are 1982 through 1992).</p>
+        <ul>
+          <li><a href="/minoltaphotos.html" class="nlink">&nbsp;Minolta Photos</a></li>
+        </ul>
+        <img src="/media/photography/himatic.jpg" style="width:250px;">
+        <hr style="clear:both;">
+        <h3>Filmlog Disposable</h3>
+        <p>Technically, this was my first film camera. I bought it at the vending machine at FilmLog in Dongdaemun for ₩30,000 when I first got to Korea to document some of my travels. When I bought it, I didn't realize that it was black & white film, so I was devastated when I developed the photos and they came back colorless. I took many colorful photos with this camera only for them to turn out grey lol.</p>
+        <ul>
+          <li><a href="/disposablephotos.html" class="nlink">&nbsp;Disposable Photos</a></li>
+        </ul>
+        <img src="/media/photography/filmlogcam.jpg" style="width:250px;">
+    </div>
+    
+    
+    <div id="art" style="display:none">
+        <h2>Art</h2>
+        <p>You can drag the thumbnails to the tab bar and view the images in full size.</p>
+        <hr style="clear:both;">
+        <h3>Commissions</h3>
+        <p>If you would like to commission me, please make an inquiry at b1fjunkshop (at) gmail (dot) com.</p>
+        <p>Paint 3D Model: $30</p>
+        <p>Digital Sketch: $15</p>
+        <p>Digital Rough Color: $20/30/40 (head/half/full)</p>
+        <p>Digital Painting: $50/60/70 (head/half/full)</p>
+        <p>Add 1.5x price per character in same image.</p>
+        <hr style="clear:both;">
+        <h3>Paint 3D Models</h3>
+        <img src="/media/art/azrael3d.png" style="width:250px;"> <img src="/media/art/kami3d.png" style="width:300px;">
+        <hr style="clear:both;">
+        <h3>Digital Art</h3>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/dekr265-31b0e751-6534-4ebc-848a-846e446395f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGVrcjI2NS0zMWIwZTc1MS02NTM0LTRlYmMtODQ4YS04NDZlNDQ2Mzk1ZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.q9R1-Fz_bvOl1uSmFC_quDTGhDc7lhP1LVZ5GXND0PY" style="height:225px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/decca7z-31bdf5c6-ac10-4735-a220-eadbd5643884.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGVjY2E3ei0zMWJkZjVjNi1hYzEwLTQ3MzUtYTIyMC1lYWRiZDU2NDM4ODQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Gqwo4xAyCJLIZDAv3CnZ4p1ZeuxnizMZSArwAj9tgy8" style="height:225px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/de3xyem-3da8f21d-7aa9-4489-9849-92fc4dfcf9ef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGUzeHllbS0zZGE4ZjIxZC03YWE5LTQ0ODktOTg0OS05MmZjNGRmY2Y5ZWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BWfRSQ5kpHKaNMrBfSQDJ9y3G-6YEYGv2o6swMzMO7U" style="height:260px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/ddxddm2-adb36e9f-9a68-45db-8b2c-b474b1eec2a9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGR4ZGRtMi1hZGIzNmU5Zi05YTY4LTQ1ZGItOGIyYy1iNDc0YjFlZWMyYTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yMrkJwJhh1vc0FQpJd-nN12ta9SBUKfWfPzJ4-bfqd0" style="height:260px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/ddxdhpz-41b93475-ba13-4b5e-9b59-f228b143c680.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGR4ZGhwei00MWI5MzQ3NS1iYTEzLTRiNWUtOWI1OS1mMjI4YjE0M2M2ODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hOb-Wzc7SvrfawcxRU8HO-17G5LoW3kPwjY8yKHt_JI" style="height:260px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/denu0j6-73ff14e3-fcee-448d-a6f6-5d64134090bb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGVudTBqNi03M2ZmMTRlMy1mY2VlLTQ0OGQtYTZmNi01ZDY0MTM0MDkwYmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.g5p4Dtwudw_iXoGaIwdmuh6ppktHNPbLSHi3W-kS-6k" style="height:175px;">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f0a7883-d044-425d-8ca0-536196d2d091/df97901-0d4cb3dd-c64a-41e7-8c72-4e635516269f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmMGE3ODgzLWQwNDQtNDI1ZC04Y2EwLTUzNjE5NmQyZDA5MVwvZGY5NzkwMS0wZDRjYjNkZC1jNjRhLTQxZTctOGM3Mi00ZTYzNTUxNjI2OWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CghOvsIPDDwfa3XH1Sz46ycG-0QSJ3yu90ZHkcwC6R4" style="height:175px;">
+        <img src="/media/art/sucrose.png" style="height:250px;">
+        <img src="/media/art/lain%20small.PNG" style="height:250px;">
+    </div>
+
+    <script>
+        function show(param_div_id) {
+            document.getElementById('rightconta').innerHTML = document.getElementById(param_div_id).innerHTML;
+        }
+    </script>
+</body>
+</html>
