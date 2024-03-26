@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B1F Junk Shop</title>
+  <style>
+
+    body {
+      background-color: #b8b6b0;
+      color: #000;
+      font-family: "MS UI Gothic", Tahoma;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00f;
+    }
+
+    #container {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    #gallery {
+      margin: auto;
+      padding: 20px;
+      white-space: nowrap; /* Prevent line breaks in gallery */
+    }
+
+    .image {
+      display: inline-block;
+      margin: 10px;
+      border: 3px inset #ccc4a9;
+    }
+    
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #b8b6b0;
+      color: #000;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+      border: 3px inset #ccc4a9;
+    }
+    
+    #stickyText {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 400px;
+      background-color: #fff;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 3px inset #ccc4a9;
+    }
+    
+  </style>
+</head>
+<body>
+    <center><a href="/"><img src="/media/b1flogo100.png"></a></center>
+    
+    <div id="stickyText">
+      <p>Welcome!</p>
+      <p>This is a "project" I started doing while I was traveling in Japan from December 2022 to March 2023. I was inspired by <i>junk journaling</i> and I wanted to keep as many memories as possible from my first trip to Japan. My memory is pretty bad so I think its a good idea to keep track of as many memories like this as possible. I thought this was a fun project and I would like to share my keepsakes with the world.</p>
+      <p>This is not a comprehensive collection of every page from my travel diary, since there were some days where I did not collect anything flat I could paste into my journal. I guess you can say this is my "proof" of going to Japan lol.</p>
+      <p>If you read my Japan Travel Diary blog posts, the pictures are in chronological order, so it is possible to correlate the dates to some of the pictures if you're feeling up for it.</p>
+      <p>Please enjoy these images.</p>
+    </div>
+  
+    <div id="container" >
+      <div id="gallery">
+        <img class="image" src="/media/jpdiary/01.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/02.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/03.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/04.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/05.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/06.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/07.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/08.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/09.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/10.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/11.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/12.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/13.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/14.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/15.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/16.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/17.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/18.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/19.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/20.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/21.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/22.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/23.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/24.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/25.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/26.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/27.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/28.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/29.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/30.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/31.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/32.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/33.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/34.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/35.jpg" style="width: 760px;"><br>
+        <img class="image" src="/media/jpdiary/36.jpg" style="width: 760px;"><br>
+      </div>
+    </div>
+    
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+  <script>
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+
+    // Show/hide the scroll-to-top button based on scroll position
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+      } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>
